@@ -15,20 +15,74 @@
   </head>
   <body>
 
-      <header>
-        <h1>Colin Lord.com</h1>
-      </header>
-
-      <div id="banner">
-
+    <div class="wrapper">
+      
+      <div class="background"></div>
+      
+      <div class="container">
+      
+        <div class="about">
+          <div class="about__photo">
+            <picture>
+              <source srcset="/assets/images/me-1x.jpg, /assets/images/me-2x.jpg 2x">
+              <img src="/assets/images/me-1x.jpg" alt="">
+            </picture>
+          </div>
+          
+          <div class="about__profile">
+            <div class="hello"><span>Hello</span></div>
+            <h1 class="name"><span>I'm</span> Colin Lord</h1>
+            <h2 class="title">Front End Developer</h2>
+            <ul class="list">
+              <li>
+                <span class="list__title">Company</span>
+                <span class="list__content"><a href="http://modea.com/">Modea</a></span>
+              </li>
+              <li>
+                <span class="list__title">Location</span>
+                <span class="list__content">Blacksburg, Virginia</span>
+              </li>
+              <li>
+                <span class="list__title">Email</span>
+                <span class="list__content"><a href="mailto:hello@colinlord.com">hello@colinlord.com</a></span>
+              </li>
+              <li>
+                <span class="list__title">Phone</span>
+                <span class="list__content"><a href="tel:4044940255">(404) 494-0255</a></span>
+              </li>
+              <li>
+                <span class="list__title">College</span>
+                <span class="list__content">Florida State University</span>
+              </li>
+              <li>
+                <span class="list__title">Experience</span>
+                <span class="list__content">10 Years</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="about__social">
+            <ul>
+              <li><a href="http://twitter.com/colinlord"><svg><use xlink:href="#svg-twitter"></use></svg></a></li>
+              <li><a href="http://linkedin.com/in/colinlord"><svg><use xlink:href="#svg-linkedin"></use></svg></a></li>
+              <li><a href="http://instagram.com/colinlord"><svg><use xlink:href="#svg-instagram"></use></svg></a></li>
+              <li><a href="http://codepen.com/colinlord"><svg><use xlink:href="#svg-codepen"></use></svg></a></li>
+              <li><a href="http://speakerdeck.com/colinlord"><svg><use xlink:href="#svg-speakerdeck"></use></svg></a></li>
+              <li><a href="https://www.strava.com/athletes/colinlord"><svg><use xlink:href="#svg-strava"></use></svg></a></li>
+              <li><a href="https://www.snapchat.com/add/colinlord/"><svg><use xlink:href="#svg-snapchat"></use></svg></a></li>
+              <li><a href="https://open.spotify.com/user/colinlord"><svg><use xlink:href="#svg-spotify"></use></svg></a></li>
+              <li><a href="https://www.last.fm/user/clordatl"><svg><use xlink:href="#svg-lastfm"></use></svg></a></li>
+              <li><a href="https://foursquare.com/colinlord"><svg><use xlink:href="#svg-foursquare"></use></svg></a></li>
+              <li><a href="https://account.xbox.com/en-US/profile?gamertag=clordatl"><svg><use xlink:href="#svg-xbox"></use></svg></a></li>
+              <li><a href="https://www.youtube.com/c/colinlord"><svg><use xlink:href="#svg-youtube"></use></svg></a></li>
+            </ul>
+          </div>
+          
+        </div>
+      
       </div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <style type="text/css" media="screen">
+      <!-- hide for now <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
     max-width: 600px;
@@ -48,16 +102,50 @@
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+ -->
 
-      </section>
-      <footer>
-
-      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
   </body>
+  <svg width="0" height="0" style="display: none;" xmlns="http://www.w3.org/2000/svg">
+  <!-- We are using an SVG sprite for our vectors throughout the site! -->
   
-  <script src="/assets/js/main-header.js"></script>
+  <symbol id="svg-twitter" viewBox="0 0 1792 1792">
+    <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/>
+  </symbol>
+  
+  <symbol id="svg-linkedin" viewBox="0 0 1792 1792">
+    <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/>
+  </symbol>
+  
+  <symbol id="svg-instagram" viewBox="0 0 1792 1792">
+    <path d="M1490 1426v-648h-135q20 63 20 131 0 126-64 232.5t-174 168.5-240 62q-197 0-337-135.5t-140-327.5q0-68 20-131h-141v648q0 26 17.5 43.5t43.5 17.5h1069q25 0 43-17.5t18-43.5zm-284-533q0-124-90.5-211.5t-218.5-87.5q-127 0-217.5 87.5t-90.5 211.5 90.5 211.5 217.5 87.5q128 0 218.5-87.5t90.5-211.5zm284-360v-165q0-28-20-48.5t-49-20.5h-174q-29 0-49 20.5t-20 48.5v165q0 29 20 49t49 20h174q29 0 49-20t20-49zm174-208v1142q0 81-58 139t-139 58h-1142q-81 0-139-58t-58-139v-1142q0-81 58-139t139-58h1142q81 0 139 58t58 139z"/>
+  </symbol>
+  
+  <symbol id="svg-codepen" viewBox="0 0 1792 1792">
+    <path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"/>
+  </symbol>
+  
+  <symbol id="svg-strava" viewBox="0 0 16 16">
+    <path d="M10.258 11.963L8.865 9.219H6.822L10.258 16l3.434-6.781h-2.045M6.975 5.486l1.891 3.732h2.781L6.975 0 2.309 9.219h2.779"/>
+  </symbol>
+  
+  <symbol id="svg-speakerdeck" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M1.067 14C.477 14 0 13.525 0 12.94V3.06C0 2.475.478 2 1.067 2h13.866c.588 0 1.065.475 1.065 1.06H16v9.88c0 .585-.478 1.06-1.067 1.06H1.067zm9.957-3.88H4.978c-.387-.007-.7-.32-.7-.707h-.005V6.587h.006c0-.386.31-.7.69-.706h6.04c.38.01.7.32.7.71v2.83h-.01c0 .39-.31.7-.7.71zM7.48 6.934L5.7 8.008l1.766 1.057.013-2.13zm1.04 2.13L10.3 7.99 8.532 6.935l-.01 2.13z"/></symbol>
+  
+  <symbol id="svg-snapchat" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8.155.48c.662 0 2.903.185 3.96 2.552.354.797.27 2.15.2 3.237l-.002.04c-.008.12-.015.23-.02.34.05.03.135.06.268.06.2-.01.44-.08.69-.2.11-.06.23-.07.31-.07.12 0 .24.02.34.06.3.1.49.32.49.56.01.3-.26.56-.81.78-.06.02-.14.05-.23.08-.3.09-.76.24-.89.54-.06.15-.04.35.08.58l.01.01c.04.09 1.02 2.32 3.2 2.68.17.03.29.18.28.34 0 .05-.01.1-.03.15-.16.38-.85.66-2.1.85-.04.06-.08.25-.11.38-.02.12-.05.24-.09.37-.05.18-.18.27-.37.27h-.02c-.09 0-.21-.02-.36-.05-.24-.05-.51-.09-.85-.09-.2 0-.4.01-.61.05-.4.07-.75.31-1.15.59-.57.4-1.22.86-2.2.86-.04 0-.08-.01-.12-.01h-.1c-.98 0-1.62-.45-2.19-.86-.4-.28-.74-.52-1.14-.59-.21-.03-.42-.05-.62-.05-.36 0-.64.06-.85.1-.14.03-.26.05-.36.05-.25 0-.35-.15-.39-.28-.04-.13-.06-.26-.09-.38s-.07-.33-.11-.38C.89 12.9.2 12.62.04 12.23c-.02-.042-.034-.1-.036-.15-.01-.162.11-.31.28-.34 2.18-.36 3.16-2.59 3.2-2.684l.01-.02c.12-.23.15-.43.08-.58-.13-.29-.59-.44-.89-.54-.08-.02-.16-.05-.23-.08-.74-.29-.84-.62-.8-.85.06-.32.45-.53.78-.53.097 0 .18.02.256.05.28.13.527.2.737.2.156 0 .256-.04.31-.07l-.03-.38c-.065-1.086-.15-2.438.205-3.23C4.94.67 7.175.49 7.835.49l.28-.01h.04z"/></symbol>
+  
+  <symbol id="svg-spotify" viewBox="0 0 1792 1792"><path d="M1255 1210q0-32-30-51-193-115-447-115-133 0-287 34-42 9-42 52 0 20 13.5 34.5t35.5 14.5q5 0 37-8 132-27 243-27 226 0 397 103 19 11 33 11 19 0 33-13.5t14-34.5zm96-215q0-40-35-61-237-141-548-141-153 0-303 42-48 13-48 64 0 25 17.5 42.5t42.5 17.5q7 0 37-8 122-33 251-33 279 0 488 124 24 13 38 13 25 0 42.5-17.5t17.5-42.5zm108-248q0-47-40-70-126-73-293-110.5t-343-37.5q-204 0-364 47-23 7-38.5 25.5t-15.5 48.5q0 31 20.5 52t51.5 21q11 0 40-8 133-37 307-37 159 0 309.5 34t253.5 95q21 12 40 12 29 0 50.5-20.5t21.5-51.5zm205 149q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></symbol>
+  
+  <symbol id="svg-lastfm" viewBox="0 0 1792 1792"><path d="M1292 704q0 6 10 41 10 29 25 49.5t41 34 44 20 55 16.5q325 91 325 332 0 146-105.5 242.5t-254.5 96.5q-59 0-111.5-18.5t-91.5-45.5-77-74.5-63-87.5-53.5-103.5-43.5-103-39.5-106.5-35.5-95q-32-81-61.5-133.5t-73.5-96.5-104-64-142-20q-96 0-183 55.5t-138 144.5-51 185q0 160 106.5 279.5t263.5 119.5q177 0 258-95 56-63 83-116l84 152q-15 34-44 70l1 1q-131 152-388 152-147 0-269.5-79t-190.5-207.5-68-274.5q0-105 43.5-206t116-176.5 172-121.5 204.5-46q87 0 159 19t123.5 50 95 80 72.5 99 58.5 117 50.5 124.5 50 130.5 55 127q96 200 233 200 81 0 138.5-48.5t57.5-128.5q0-42-19-72t-50.5-46-72.5-31.5-84.5-27-87.5-34-81-52-65-82-39-122.5q-3-16-3-33 0-110 87.5-192t198.5-78q78 3 120.5 14.5t90.5 53.5h-1q12 11 23 24.5t26 36 19 27.5l-129 99q-26-49-54-70v-1q-23-21-97-21-49 0-84 33t-35 83z"/></symbol>
+  
+  <symbol id="svg-foursquare" viewBox="0 0 1792 1792"><path d="M1256 434l37-194q5-23-9-40t-35-17h-712q-23 0-38.5 17t-15.5 37v1101q0 7 6 1l291-352q23-26 38-33.5t48-7.5h239q22 0 37-14.5t18-29.5q24-130 37-191 4-21-11.5-40t-36.5-19h-294q-29 0-48-19t-19-48v-42q0-29 19-47.5t48-18.5h346q18 0 35-13.5t20-29.5zm227-222q-15 73-53.5 266.5t-69.5 350-35 173.5q-6 22-9 32.5t-14 32.5-24.5 33-38.5 21-58 10h-271q-13 0-22 10-8 9-426 494-22 25-58.5 28.5t-48.5-5.5q-55-22-55-98v-1410q0-55 38-102.5t120-47.5h888q95 0 127 53t10 159zm0 0l-158 790q4-17 35-173.5t69.5-350 53.5-266.5z"/></symbol>
+  
+  <symbol id="svg-xbox" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M2.734 14.024C4.14 15.256 5.984 16.002 8 16.002c2.017 0 3.86-.746 5.267-1.978C14.52 12.748 10.39 8.216 8 6.41c-2.388 1.806-6.52 6.338-5.266 7.614zm7.44-9.607c1.667 1.974 4.99 6.877 4.05 8.61C15.334 11.654 16 9.907 16 8.002c0-2.227-.91-4.242-2.38-5.692 0 0-.018-.015-.056-.028-.04-.015-.1-.03-.187-.03-.394 0-1.323.29-3.203 2.165zM2.436 2.282c-.038.013-.055.027-.057.028C.91 3.76 0 5.775 0 8.002c0 1.903.665 3.65 1.774 5.023C.84 11.288 4.16 6.39 5.827 4.417c-1.88-1.876-2.81-2.164-3.204-2.164-.087 0-.148.014-.187.03zM8 2.365S6.036 1.217 4.503 1.162c-.602-.022-.97.197-1.014.226 1.43-.96 2.95-1.39 4.5-1.39H8c1.556 0 3.07.43 4.51 1.39-.045-.03-.41-.248-1.013-.226C9.964 1.217 8 2.362 8 2.362v.004z"/></symbol>
+  
+  <symbol id="svg-youtube" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1280 896q0-37-30-54l-512-320q-31-20-65-2-33 18-33 56v640q0 38 33 56 16 8 31 8 20 0 34-10l512-320q30-17 30-54zm512 0q0 96-1 150t-8.5 136.5-22.5 147.5q-16 73-69 123t-124 58q-222 25-671 25t-671-25q-71-8-124.5-58t-69.5-123q-14-65-21.5-147.5t-8.5-136.5-1-150 1-150 8.5-136.5 22.5-147.5q16-73 69-123t124-58q222-25 671-25t671 25q71 8 124.5 58t69.5 123q14 65 21.5 147.5t8.5 136.5 1 150z"/></symbol>
+  
+</svg>
+  <script src="/assets/js/main-footer.js"></script>
   
 </html>

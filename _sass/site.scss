@@ -1,10 +1,10 @@
-/*
-Leap Day for GitHub Pages
-by Matt Graham
-*/
-
 @import "normalize";
 @import "fonts";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12,4 +12,187 @@ body {
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
+}
+
+.background {
+  background-image: url("/assets/images/background.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 515px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: index($z-index, background);
+}
+
+.container {
+  margin: 10px;
+  
+  @media screen and (min-width: $phone-landscape) {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.about {
+  @extend .white-box;
+  position: relative;
+  z-index: index($z-index, content);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+  @media screen and (min-width: $phone-landscape) {
+    margin-top: 10px;
+    grid-gap: 40px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    margin-top: 40px;
+  }
+
+}
+
+.about__photo {
+  grid-column: 1 / span 2;
+  padding: 25px;
+  
+  source, img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: $phone-landscape) {
+    padding: 40px 0 0 50px;
+    grid-column: 1;
+  }
+}
+
+.about__profile {
+  grid-column: 1 / span 2;
+  padding: 0 20px;
+  text-align: center;
+  
+  @media screen and (min-width: $phone-landscape) {
+    padding: 40px 50px 0 0;
+    grid-column: 2;
+    text-align: left;
+  }
+  
+  .hello {
+    margin-bottom: 25px;
+    
+    span {
+      background: $red;
+      padding: 8px 15px;
+      color: $white;
+      font-size: 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      position: relative;
+      
+      &:before {
+        border-color: transparent;
+        border-left-color: $red;
+        border-width: 0 0 14px 14px;
+        content: '';
+        width: 0;
+        height: 0;
+        top: 100%;
+        left: 10px;
+        display: block;
+        position: absolute;
+        border-style: solid;
+      }
+    }
+  }
+  
+  h1.name {
+    font-weight: 500;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    
+    span {
+      font-weight: 300;
+    }
+  }
+  
+  h2.title {
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $light-gray;
+  }
+  
+  ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    text-align: left;
+  }
+  
+  .list__title {
+    font-weight: 600;
+    width: 35%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .75rem;
+  }
+  
+  .list__content {
+    font-weight: 300;
+    color: $dark-gray;
+    line-height: 1.75rem;
+    
+    a {
+      color: $dark-gray;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+.about__social {
+  grid-column: 1 / span 2;
+  padding: 10px 5%;
+  margin-top: 20px;
+  background: $red;
+  
+  @media screen and (min-width: $phone-landscape) {
+    padding: 20px 40px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: $white;
+  }
+  
+  a {
+    opacity: .8;
+    transition: .25s ease-in-out;
+    
+    &:hover { opacity: 1; }
+  }
 }

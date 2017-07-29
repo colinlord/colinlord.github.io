@@ -15,29 +15,80 @@
   </head>
   <body>
 
-      <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-      </header>
-
-      <div id="banner">
-
+    <div class="wrapper">
+      
+      <div class="background"></div>
+      
+      <div class="container">
+      
+        <div class="about">
+          <div class="about__photo">
+            <picture>
+              <source srcset="/assets/images/me-1x.jpg, /assets/images/me-2x.jpg 2x">
+              <img src="/assets/images/me-1x.jpg" alt="">
+            </picture>
+          </div>
+          
+          <div class="about__profile">
+            <div class="hello"><span>Hello</span></div>
+            <h1 class="name"><span>I'm</span> Colin Lord</h1>
+            <h2 class="title">Front End Developer</h2>
+            <ul class="list">
+              <li>
+                <span class="list__title">Company</span>
+                <span class="list__content"><a href="http://modea.com/">Modea</a></span>
+              </li>
+              <li>
+                <span class="list__title">Location</span>
+                <span class="list__content">Blacksburg, Virginia</span>
+              </li>
+              <li>
+                <span class="list__title">Email</span>
+                <span class="list__content"><a href="mailto:hello@colinlord.com">hello@colinlord.com</a></span>
+              </li>
+              <li>
+                <span class="list__title">Phone</span>
+                <span class="list__content"><a href="tel:4044940255">(404) 494-0255</a></span>
+              </li>
+              <li>
+                <span class="list__title">College</span>
+                <span class="list__content">Florida State University</span>
+              </li>
+              <li>
+                <span class="list__title">Experience</span>
+                <span class="list__content">10 Years</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="about__social">
+            <ul>
+              <li><a href="http://twitter.com/colinlord"><svg><use xlink:href="#svg-twitter"></use></svg></a></li>
+              <li><a href="http://linkedin.com/in/colinlord"><svg><use xlink:href="#svg-linkedin"></use></svg></a></li>
+              <li><a href="http://instagram.com/colinlord"><svg><use xlink:href="#svg-instagram"></use></svg></a></li>
+              <li><a href="http://codepen.com/colinlord"><svg><use xlink:href="#svg-codepen"></use></svg></a></li>
+              <li><a href="http://speakerdeck.com/colinlord"><svg><use xlink:href="#svg-speakerdeck"></use></svg></a></li>
+              <li><a href="https://www.strava.com/athletes/colinlord"><svg><use xlink:href="#svg-strava"></use></svg></a></li>
+              <li><a href="https://www.snapchat.com/add/colinlord/"><svg><use xlink:href="#svg-snapchat"></use></svg></a></li>
+              <li><a href="https://open.spotify.com/user/colinlord"><svg><use xlink:href="#svg-spotify"></use></svg></a></li>
+              <li><a href="https://www.last.fm/user/clordatl"><svg><use xlink:href="#svg-lastfm"></use></svg></a></li>
+              <li><a href="https://foursquare.com/colinlord"><svg><use xlink:href="#svg-foursquare"></use></svg></a></li>
+              <li><a href="https://account.xbox.com/en-US/profile?gamertag=clordatl"><svg><use xlink:href="#svg-xbox"></use></svg></a></li>
+              <li><a href="https://www.youtube.com/c/colinlord"><svg><use xlink:href="#svg-youtube"></use></svg></a></li>
+            </ul>
+          </div>
+          
+        </div>
+      
       </div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        {{ content }}
-      </section>
-      <footer>
+      <!-- hide for now {{ content }} -->
 
-      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
   </body>
-  
-  <script src="{{ '/assets/js/main-header.js' | relative_url }}"></script>
+  {% include svg.html %}
+  <script src="{{ '/assets/js/main-footer.js' | relative_url }}"></script>
   
 </html>
