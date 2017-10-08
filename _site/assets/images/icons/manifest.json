@@ -1,5 +1,6 @@
 {
-    "name": "",
+    "name": "Colin Lord.com",
+    "short_name": "CL.com",
     "icons": [
         {
             "src": "/assets/images/icons/android-chrome-192x192.png",
@@ -14,5 +15,6 @@
     ],
     "theme_color": "#a6192d",
     "background_color": "#a6192d",
-    "display": "standalone"
+    "display": "minimal-ui",
+    "start_url": "/"
 }
