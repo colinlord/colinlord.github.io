@@ -1,12 +1,12 @@
 # Colin Lord.com
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll.svg)]
-[![Linux Build Status](https://img.shields.io/travis/jekyll/jekyll/master.svg?label=Linux%20build)]
-[![Windows Build status](https://img.shields.io/appveyor/ci/jekyll/jekyll/master.svg?label=Windows%20build)]
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/jekyll/jekyll.svg)]
-[![Code Climate](https://img.shields.io/codeclimate/github/jekyll/jekyll.svg)]
-[![Dependency Status](https://img.shields.io/gemnasium/jekyll/jekyll.svg)]
-[![Security](https://hakiri.io/github/jekyll/jekyll/master.svg)]
+![Gem Version](https://img.shields.io/gem/v/jekyll.svg)
+![Linux Build Status](https://img.shields.io/travis/jekyll/jekyll/master.svg?label=Linux%20build)
+![Windows Build status](https://img.shields.io/appveyor/ci/jekyll/jekyll/master.svg?label=Windows%20build)
+![Test Coverage](https://img.shields.io/codeclimate/coverage/github/jekyll/jekyll.svg)
+![Code Climate](https://img.shields.io/codeclimate/github/jekyll/jekyll.svg)
+![Dependency Status](https://img.shields.io/gemnasium/jekyll/jekyll.svg)
+![Security](https://hakiri.io/github/jekyll/jekyll/master.svg)
 
 This is my personal site. After going through several iterations where I was spending too much time deciding the back end, I decided to go to GitHub pages as my host and Jekyll as the CMS.
 
