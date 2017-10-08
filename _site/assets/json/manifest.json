@@ -1,0 +1,22 @@
+{
+  "name": "Colin Lord.com",
+  "short_name": "CL.com",
+  "icons": [
+    {
+      "src": "/assets/images/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#a6192d",
+  "background_color": "#a6192d",
+  "display": "minimal-ui",
+  "start_url": "/",
+  "version": "2017.10.08.1",
+  "manifest_version": 2
+}
