@@ -15,7 +15,7 @@
   ],
   "theme_color": "#a6192d",
   "background_color": "#a6192d",
-  "display": "minimal-ui",
+  "display": "standalone",
   "start_url": "/",
   "version": "2017.10.08.1",
   "manifest_version": 2
