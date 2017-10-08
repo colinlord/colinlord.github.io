@@ -8,9 +8,9 @@
 ![Dependency Status](https://img.shields.io/gemnasium/jekyll/jekyll.svg)
 ![Security](https://hakiri.io/github/jekyll/jekyll/master.svg)
 
-This is my personal site. After going through several iterations where I was spending too much time deciding the back end, I decided to go to GitHub pages as my host and Jekyll as the CMS.
+This is my personal site. After going through several iterations, I decided to rebuild with GitHub pages and Jekyll.
 
-Below are notes that are primarily for me. But since it's is hosted on GitHub pages, anybody can technically get into my repo and look around.
+Below are notes that are primarily for me. But since it's hosted on GitHub pages, anybody can technically get into my repo and look around.
 
 ## Local Environment
 
