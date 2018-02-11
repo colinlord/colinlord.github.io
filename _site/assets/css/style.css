@@ -409,9 +409,9 @@ template {
   box-sizing: border-box; }
 
 body {
-  font: 14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/22px 'Quattrocento Sans', Helvetica, Arial, sans-serif;
   color: #666;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0px;
   padding: 0px 0 20px 0px; }
 
@@ -491,14 +491,14 @@ body {
         position: absolute;
         border-style: solid; }
   .about__profile h1.name {
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
     font-size: 2.5rem;
     line-height: 3rem; }
     .about__profile h1.name span {
-      font-weight: 300; }
+      font-weight: 400; }
   .about__profile h2.title {
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -510,13 +510,13 @@ body {
   .about__profile li {
     text-align: left; }
   .about__profile .list__title {
-    font-weight: 600;
+    font-weight: 700;
     width: 35%;
     display: inline-block;
     text-transform: uppercase;
     font-size: .75rem; }
   .about__profile .list__content {
-    font-weight: 300;
+    font-weight: 400;
     color: #a6a6a6;
     line-height: 1.75rem; }
     .about__profile .list__content a {
