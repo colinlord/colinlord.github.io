@@ -415,6 +415,9 @@ body {
   margin: 0px;
   padding: 0px 0 20px 0px; }
 
+h1 {
+  text-align: center; }
+
 .background {
   background-image: url("/assets/images/background.jpg");
   background-size: cover;
@@ -441,11 +444,11 @@ body {
   grid-template-columns: 1fr 2fr; }
   @media screen and (min-width: 650px) {
     .about {
-      margin-top: 10px;
+      margin: 10px 0;
       grid-gap: 40px; } }
   @media screen and (min-width: 960px) {
     .about {
-      margin-top: 40px; } }
+      margin: 40px 0; } }
 
 .about__photo {
   grid-column: 1 / span 2;
@@ -494,7 +497,8 @@ body {
     font-weight: 600;
     margin: 0;
     font-size: 2.5rem;
-    line-height: 3rem; }
+    line-height: 3rem;
+    text-align: left; }
     .about__profile h1.name span {
       font-weight: 400; }
   .about__profile h2.title {
@@ -552,3 +556,9 @@ body {
     transition: .25s ease-in-out; }
     .about__social a:hover {
       opacity: 1; }
+
+.skills h1 {
+  text-transform: uppercase; }
+
+.experience h1 {
+  text-transform: uppercase; }
