@@ -29,5 +29,44 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        // I have created a dummy site for us to use with the plugins we discussed
+        baseUrl: "cms.lordcol.in",
+        protocol: "https",
+        hostingWPCOM: false,
+        // We will be using some advanced custom fields
+        useACF: true,
+        acfOptionPageIds: [],
+        verboseOutput: false,
+        perPage: 100,
+        searchAndReplaceContentUrls: {
+          sourceUrl: "https://cms.lordcol.in",
+          replacementUrl: "https://localhost:8000",
+        },
+        // Set how many simultaneous requests are sent at once.
+        concurrentRequests: 10,
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+          "**/*/*/menus",
+          "**/*/*/menu-locations",
+        ],
+        excludedRoutes: [],
+        normalizer: function({ entities }) {
+          return entities
+        },
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // 'gatsby-plugin-offline',
   ],
 }
