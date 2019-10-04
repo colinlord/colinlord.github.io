@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 const BlogPostTemplate = ({ data }) => (
   <Layout>
     <SEO
@@ -20,7 +20,6 @@ const BlogPostTemplate = ({ data }) => (
   </Layout>
 )
 export default BlogPostTemplate
-
 export const query = graphql`
   query($id: Int!) {
     wordpressPost(wordpress_id: { eq: $id }) {
