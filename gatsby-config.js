@@ -50,6 +50,7 @@ module.exports = {
         includedRoutes: [
           "**/categories",
           "**/posts",
+          "**/races",
           "**/pages",
           "**/media",
           "**/tags",
