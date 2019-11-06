@@ -13,6 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const BlogPostTemplate = path.resolve("./src/templates/BlogPost.js")
   const PageTemplate = path.resolve("./src/templates/Page.js")
+  const RaceReportTemplate = path.resolve("./src/templates/RaceReport.js")
 
   return graphql(`
     {
@@ -25,6 +26,14 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
       allWordpressPage {
+        edges {
+          node {
+            slug
+            wordpress_id
+          }
+        }
+      }
+      allWordpressWpRaces {
         edges {
           node {
             slug
@@ -57,6 +66,17 @@ exports.createPages = ({ graphql, actions }) => {
             id: page.node.wordpress_id,
           },
         })
+      })
+    })
+
+    const RaceReports = result.data.allWordpressWpRaces.edges
+    RaceReports.forEach(post => {
+      createPage({
+        path: `/race-report/${post.node.slug}`,
+        component: RaceReportTemplate,
+        context: {
+          id: post.node.wordpress_id,
+        },
       })
     })
   })

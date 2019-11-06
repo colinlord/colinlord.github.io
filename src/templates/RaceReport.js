@@ -1,44 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-const BlogPostTemplate = ({ data }) => (
+const RaceReportTemplate = ({ data }) => (
   <Layout>
-    <SEO
-      title={data.wordpressPost.title}
-      description={data.wordpressPost.excerpt}
-    />
-    <h1>{data.wordpressPost.title}</h1>
-    <p>
-      Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
-    </p>
-    <p>
-      Featured Image:
-      <img
-        src={data.wordpressPost.jetpack_featured_media_url}
-        alt="featured"
-        class="featured"
-      />
-    </p>
-    <div
-      style={{ marginTop: 20 }}
-      dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
-    />
+    <SEO title={data.wordpressWpRaces.title} />
+    <h1>{data.wordpressWpRaces.title}</h1>
   </Layout>
 )
-export default BlogPostTemplate
+export default RaceReportTemplate
 export const query = graphql`
   query($id: Int!) {
-    wordpressPost(wordpress_id: { eq: $id }) {
+    wordpressWpRaces(wordpress_id: { eq: $id }) {
       title
-      content
-      excerpt
-      jetpack_featured_media_url
       date(formatString: "MMMM DD, YYYY")
-      author {
-        name
-      }
     }
   }
 `
