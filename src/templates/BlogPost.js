@@ -11,7 +11,8 @@ const BlogPostTemplate = ({ data }) => (
     />
     <h1>{data.wordpressPost.title}</h1>
     <p>
-      Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
+      Originally published: {data.wordpressPost.date}<br />
+      Last updated: {data.wordpressPost.modified}
     </p>
     <p>
       Featured Image:
@@ -36,9 +37,7 @@ export const query = graphql`
       excerpt
       jetpack_featured_media_url
       date(formatString: "MMMM DD, YYYY")
-      author {
-        name
-      }
+      modified(formatString: "MMMM DD, YYYY")
     }
   }
 `

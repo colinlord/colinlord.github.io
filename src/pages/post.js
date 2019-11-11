@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -19,8 +18,9 @@ const IndexPage = ({ data }) => (
                 dangerouslySetInnerHTML={{ __html: post.node.title }}
                 style={{ marginBottom: 0 }}
               />
-              <p style={{ margin: 0, color: "grey" }}>
-                Written by {post.node.author.name} on {post.node.date}
+              <p>
+                Originally published: {post.node.date}<br />
+                Last modified: {post.node.modified}
               </p>
               <div dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
             </div>
@@ -40,10 +40,8 @@ export const query = graphql`
           title
           excerpt
           slug
-          author {
-            name
-          }
           date(formatString: "MMMM DD, YYYY")
+          modified(formatString: "MMMM DD, YYYY")
         }
       }
     }
