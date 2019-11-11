@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/avatar.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
@@ -32,11 +32,9 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        // I have created a dummy site for us to use with the plugins we discussed
         baseUrl: "cms.lordcol.in",
         protocol: "https",
         hostingWPCOM: false,
-        // We will be using some advanced custom fields
         useACF: true,
         acfOptionPageIds: [],
         verboseOutput: false,
