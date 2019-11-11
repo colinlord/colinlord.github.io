@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Colin Lord.com`,
+    description: `Colin Lord is a Front-End Engineer currently living in Nashville, TN. He’s been writing code since the days of IE6...and has a few gray hairs to prove it!`,
+    author: `@colinlord`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -60,7 +60,7 @@ module.exports = {
           "**/*/*/menu-locations",
         ],
         excludedRoutes: [],
-        normalizer: function({ entities }) {
+        normalizer: function ({ entities }) {
           return entities
         },
       },
