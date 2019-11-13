@@ -1,3 +1,16 @@
 header {
   background: red;
 }
+
+header .container {
+  display: flex;
+}
+
+header .logo {
+  flex-grow: 2;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}

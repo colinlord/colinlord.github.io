@@ -5,23 +5,27 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <h1>
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        {siteTitle}
-      </Link>
-    </h1>
-    <nav>
-      <ul>
-        <li>Link</li>
-        <li>Link 2</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="logo">
+        <h1>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Link</li>
+          <li>Link 2</li>
+        </ul>
+      </nav>
+    </div>
   </header>
 )
 
