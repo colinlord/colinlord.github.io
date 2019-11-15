@@ -8,15 +8,7 @@ const Header = ({ siteTitle }) => (
     <div class="container">
       <div class="logo">
         <h1>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
+          <Link to="/">{siteTitle}</Link>
         </h1>
       </div>
       <nav>
@@ -25,6 +17,11 @@ const Header = ({ siteTitle }) => (
           <li>Link 2</li>
         </ul>
       </nav>
+      <button class="hamburger" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
   </header>
 )
