@@ -1,37 +1,64 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import "./header.scss"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div class="container">
-      <div class="logo">
-        <h1>
-          <Link to="/">{siteTitle}</Link>
-        </h1>
-      </div>
-      <nav>
-        <ul>
-          <li>Link</li>
-          <li>Link 2</li>
-        </ul>
-      </nav>
-      <button class="hamburger" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
-  </header>
-)
+const Header = class extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      active: false,
+      navBarActiveClass: "",
+    }
+  }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  toggleHamburger = () => {
+    // toggle the active boolean in the state
+    this.setState(
+      {
+        active: !this.state.active,
+      },
+      // after state has been updated,
+      () => {
+        // set the class in state for the navbar accordingly
+        this.state.active
+          ? this.setState({
+              navBarActiveClass: "is-active",
+            })
+          : this.setState({
+              navBarActiveClass: "",
+            })
+      }
+    )
+  }
 
-Header.defaultProps = {
-  siteTitle: ``,
+  render() {
+    return (
+      <header>
+        <div className="container">
+          <div className="logo">
+            <h1>
+              <Link to="/">Colin Lord.com</Link>
+            </h1>
+          </div>
+          <nav className={`${this.state.navBarActiveClass}`}>
+            <ul>
+              <li>Link</li>
+              <li>Link 2</li>
+            </ul>
+          </nav>
+          <button
+            className="hamburger"
+            type="button"
+            onClick={() => this.toggleHamburger()}
+          >
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </header>
+    )
+  }
 }
 
 export default Header
