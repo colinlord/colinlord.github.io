@@ -19,6 +19,7 @@ const Header = class extends React.Component {
       },
       // after state has been updated,
       () => {
+        document.body.classList.toggle("modal-open")
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
@@ -33,7 +34,7 @@ const Header = class extends React.Component {
 
   render() {
     return (
-      <header>
+      <header class="global">
         <div className="container">
           <div className="logo">
             <h1>
