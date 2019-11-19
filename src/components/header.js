@@ -11,6 +11,18 @@ const Header = class extends React.Component {
     }
   }
 
+  // Adds an event listener when the component is mount.
+  componentDidMount() {
+    window.addEventListener("scroll", function() {
+      let currentScrollPos = window.pageYOffset
+      if (currentScrollPos > 60) {
+        document.body.classList.add("smaller")
+      } else {
+        document.body.classList.remove("smaller")
+      }
+    })
+  }
+
   toggleHamburger = () => {
     // toggle the active boolean in the state
     this.setState(
@@ -34,7 +46,7 @@ const Header = class extends React.Component {
 
   render() {
     return (
-      <header class="global">
+      <header>
         <div className="container">
           <div className="logo">
             <h1>
